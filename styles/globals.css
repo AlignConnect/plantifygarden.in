@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.fontInter{
+  font-family: "Inter", sans-serif;
+}
+
+.fontPoppins {
+  font-family: 'Poppins', sans-serif;
+}
+
+.fontBebas {
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.fontNoto {
+  font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.fontKalnia {
+  font-family: 'Kalnia', serif;
+}
+
+.fontArya {
+  font-family: 'Arya', sans-serif;
+}
+
+.fontRighteous {
+  font-family: "Righteous", sans-serif;
+}
+
+.fontJosefin {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.fontMaamli {
+  font-family: "Ga Maamli", sans-serif;
+}
+
+
+body {
+  font-family: 'Noto Serif Devanagari', sans-serif;
+}
+
+.every_stick_bg {
+  background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/89807487-2fa7-40dc-2497-bb6a9608f800/public");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.hm_g_bg {
+  background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/785e86e4-5d20-496b-3c20-db30c3544e00/public");
+  background-size: cover;
+  background-position: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .every_stick_bg {
+    background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/2799445c-082c-49f7-dc88-f74b18e48000/public");
+    background-size: cover;
+    background-position: unset;
+
+  }
+
+  .hm_g_bg {
+    background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/6d86e19b-d05c-4721-9e6d-71a44f744a00/public");
+    background-position: unset;
+
+  }
+
+}
+
+
+
+.tt {
+  text-align: center;
+  width: 100%;
+  transition: 0.7s ease-in;
+  bottom: 0%;
+}
+
+.xx {
+  bottom: -25%;
+  text-align: center;
+  width: 100%;
+  transition: 0.7s ease;
+}
+
+.commonArrow {
+  color: rgb(225, 194, 49);
+  background: red;
+  border-radius: 50%;
+  font-size: 1.5rem;
+}
+
+.arrow-3 {
+  animation: k3 1s linear infinite alternate;
+}
+
+@keyframes k3 {
+  from {
+    transform: translate(0%);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.arrow-4 {
+  animation: k4 1s linear infinite alternate;
+}
+
+@keyframes k4 {
+  from {
+    transform: translate(0%);
+  }
+
+  to {
+    transform: translateX(50%);
+  }
+}
+
+
+
+/* sub domain pltsy -- */
+
+.vb:hover::after {
+
+  height: 100%;
+  width: 100%;
+  background-color: yellow;
+  z-index: -1;
+  transition: 0.2s ease;
+
+}
+
+.vb::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background-color: rgba(48, 177, 22, 0.562);
+}
+
+.tt {
+  text-align: center;
+  width: 100%;
+  transition: 0.7s ease-in;
+  bottom: 0%;
+}
+
+.xx {
+  bottom: -25%;
+  text-align: center;
+  width: 100%;
+  transition: 0.7s ease;
+}
+
+.p_s_d{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+.clip_off {
+  clip-path: polygon(100% 0%, 100% 48%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+
+.qty_shadoow {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+
+
+
+
+.LoaderApp-logo {
+  animation: App-logo-spin infinite 10s linear;
+  height: 10vmin;
+  pointer-events: none;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.activeStatus2 {
+  background-color: #e7ff7c;
+}
