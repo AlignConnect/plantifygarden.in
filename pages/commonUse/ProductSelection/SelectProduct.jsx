@@ -42,6 +42,10 @@ const SelectProduct = () => {
     setSubtotal(calculatedSubtotal);
   }, [quantity, selectProducts?.price]);
 
+
+  const imageSrc = products?.images?.find((x) => String(x?.id) === String(selectProducts?.image_id))?.src;
+
+
   const reasons = (arr) => {
     return arr?.map((e, key) => {
       return (
@@ -63,17 +67,28 @@ const SelectProduct = () => {
   return (
     <div className="bg-white py-5 fontPoppins sm:py-10">
       <div className="max-w-5xl mx-auto  px-3  ">
-        <div className="grid sm:grid-cols-2 items-center">
+        <div className="grid sm:grid-cols-2 items-center gap-5">
           <div className="">
-            <img
-              src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/513e3e33-1e2c-466d-3310-0208e722dc00/public"
-              alt="pic"
-              className="w-full "
-              loading="lazy"
-            />
+            {imageSrc ? (
+              <img
+                src={imageSrc}
+                alt="pic"
+                className="sm:w-3/4 w-full mx-auto"
+                loading="lazy"
+                id="buynow"
+              />
+            ) : (
+              <p>Product image's not available</p> // This can be a fallback message or a placeholder image
+            )}
           </div>
 
+
           <div className="">
+
+            <div className="fontPoppins sm:text-2xl text-xl font-semibold py-2">
+              {products?.title}
+            </div>
+
             <div className="flex items-center py-2 space-x-2" id="order-now">
               <span className="text-gray-500 text-lg line-through">
                 ₹{parseInt(selectProducts?.compare_at_price)}
@@ -186,22 +201,22 @@ const SelectProduct = () => {
                         )}
                         % off)
                       </h3>
-                      <p className="text-sm text-gray-500">
+                      <div className="text-sm text-gray-500">
                         (extra 10% discount on online payment)
-                      </p>
+                      </div>
                     </div>
                   </div>
                   <div className="text-left ms-5 sm:ms-0 flex items-center gap-2 sm:block ">
-                    <p
+                    <div
                       className="line-through text-md text-gray-400"
                       style={{ textDecoration: "line-through red" }}
                     >
                       ₹{parseInt(variant?.compare_at_price)}
-                    </p>
+                    </div>
 
-                    <p className="text-green-700 font-bold text-2xl">
+                    <div className="text-green-700 font-bold text-2xl">
                       ₹{parseInt(variant?.price)}
-                    </p>
+                    </div>
                   </div>
                 </div>
               </label>
@@ -237,9 +252,11 @@ const SelectProduct = () => {
         </div> */}
 
 
-        <ShiProcket />
+        <div className="text-center py-1">
+          <ShiProcket />
+        </div>
 
-        <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e87c6e29-6fc5-41dd-cde9-912aca28dc00/public" alt="" className="w-full"/>
+        <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/e87c6e29-6fc5-41dd-cde9-912aca28dc00/public" alt="" className="w-full" />
 
 
         {/* <div className='text-md '>
@@ -263,7 +280,7 @@ const SelectProduct = () => {
             />
           </a>
         </div>
-        
+
         {/* <div className="">
           <Link
             href={{

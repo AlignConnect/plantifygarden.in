@@ -563,7 +563,7 @@ const Page = () => {
 
                       <h4 className="mb-3">
                         <span className="font-semibold">Size:&nbsp;</span>
-                        <span className="bg-[#c8e27f] text-sm text-[#12813f] font-semibold rounded-full px-3">
+                        <span className="bg-[#c8e27f] sm:text-sm text-[0.8rem]  text-[#12813f] font-semibold rounded-full px-3">
                           {variant?.title}
                         </span>
                       </h4>
@@ -921,7 +921,7 @@ const Page = () => {
                 alt="100% organic"
                 className="h-8 mx-auto"
               />
-              <p className="text-xs mt-2">100% organic</p>
+              <div className="text-xs mt-2">100% organic</div>
             </div>
             <div>
               <img
@@ -929,7 +929,7 @@ const Page = () => {
                 alt="Toxic free"
                 className="h-8 mx-auto"
               />
-              <p className="text-xs mt-2">Toxic free</p>
+              <div className="text-xs mt-2">Toxic free</div>
             </div>
             <div>
               <img
@@ -937,7 +937,7 @@ const Page = () => {
                 alt="Sea weed extract"
                 className="h-8 mx-auto"
               />
-              <p className="text-xs mt-2">Sea weed extract</p>
+              <div className="text-xs mt-2">Sea weed extract</div>
             </div>
             <div>
               <img
@@ -945,7 +945,7 @@ const Page = () => {
                 alt="Free shipping"
                 className="h-8 mx-auto"
               />
-              <p className="text-xs mt-2">Free shipping</p>
+              <div className="text-xs mt-2">Free shipping</div>
             </div>
           </div>
 
@@ -972,11 +972,11 @@ const Page = () => {
               loading="lazy"
             />
 
-            <p className="text-md mt-2 font-semibold">{products?.vendor}</p>
-            <p className="text-sm pb-3">
+            <div className="text-md mt-2 font-semibold">{products?.vendor}</div>
+            <div className="text-sm pb-3">
               FF 14, Ujala Avenue, Sarkhej Road, Vishala, Ahmedabad Gujarat
               (INDIA) - 380055
-            </p>
+            </div>
           </div>
         </div>
       </div>

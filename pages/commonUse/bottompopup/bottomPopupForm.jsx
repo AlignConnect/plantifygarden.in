@@ -22,7 +22,7 @@ const BottomPopupForm = () => {
 
     return (
         <div className='w-full bg-[#262525] py-1' onClick={() => window.location.href = "#order-now"}>
-            <p className='text-center text-[1.2rem] m-0'>डिस्काउंट का अंत: <span className='text-[#e1c231]'>{`${hours}:${minutes}:${remainingSeconds}`}</span></p>
+            <div className='text-center text-[1.2rem] m-0'>डिस्काउंट का अंत: <span className='text-[#e1c231]'>{`${hours}:${minutes}:${remainingSeconds}`}</span></div>
             <div className='flex justify-center items-center gap-2 text-white'>
                 <BsArrowRightCircleFill className='arrow-3 commonArrow' />
                 <a href="#order-now"><button  className='text-center decoration-none border-0 rounded-lg pt-1  px-3 font-bold bg-[red]' >पैक 55% छूट के साथ</button></a>

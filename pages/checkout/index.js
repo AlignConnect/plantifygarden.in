@@ -733,7 +733,7 @@ const Page = () => {
                 alt="100% organic"
                 className="h-8 mx-auto"
               />
-              <p className="text-xs mt-2">100% organic</p>
+              <div className="text-xs mt-2">100% organic</div>
             </div>
             <div>
               <img
@@ -741,7 +741,7 @@ const Page = () => {
                 alt="Toxic free"
                 className="h-8 mx-auto"
               />
-              <p className="text-xs mt-2">Toxic free</p>
+              <div className="text-xs mt-2">Toxic free</div>
             </div>
             <div>
               <img
@@ -749,7 +749,7 @@ const Page = () => {
                 alt="Sea weed extract"
                 className="h-8 mx-auto"
               />
-              <p className="text-xs mt-2">Sea weed extract</p>
+              <div className="text-xs mt-2">Sea weed extract</div>
             </div>
             <div>
               <img
@@ -757,7 +757,7 @@ const Page = () => {
                 alt="Free shipping"
                 className="h-8 mx-auto"
               />
-              <p className="text-xs mt-2">Free shipping</p>
+              <div className="text-xs mt-2">Free shipping</div>
             </div>
           </div>
 
@@ -768,8 +768,8 @@ const Page = () => {
           <div className="text-center mt-3">
             <img src="https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/01291425-cb6b-470b-4b4b-2c2e1a2c9c00/public" alt="Logo" className="w-40 mx-auto" width='100%' height='100%' loading="lazy" />
 
-            <p className="text-md mt-2 font-semibold">{products?.vendor}</p>
-            <p className="text-md mt-1">FF 14, Ujala Avenue, Sarkhej Road, Vishala, Ahmedabad Gujarat (INDIA) - 380055</p>
+            <div className="text-md mt-2 font-semibold">{products?.vendor}</div>
+            <div className="text-md mt-1">FF 14, Ujala Avenue, Sarkhej Road, Vishala, Ahmedabad Gujarat (INDIA) - 380055</div>
           </div>
         </div>
       </div>

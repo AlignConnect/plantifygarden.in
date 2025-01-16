@@ -1,17 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Arya:wght@400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalnia&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arya:wght@400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -20,7 +20,6 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
 
 @layer utilities {
   .text-balance {
@@ -32,13 +31,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.fontAbril {
+  font-family: "Abril Fatface", serif;
+}
 
-.fontInter{
+.fontInter {
   font-family: "Inter", sans-serif;
 }
 
 .fontPoppins {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .fontBebas {
@@ -46,15 +48,15 @@ html {
 }
 
 .fontNoto {
-  font-family: 'Noto Serif Devanagari', sans-serif;
+  font-family: "Noto Serif Devanagari", sans-serif;
 }
 
 .fontKalnia {
-  font-family: 'Kalnia', serif;
+  font-family: "Kalnia", serif;
 }
 
 .fontArya {
-  font-family: 'Arya', sans-serif;
+  font-family: "Arya", sans-serif;
 }
 
 .fontRighteous {
@@ -69,9 +71,8 @@ html {
   font-family: "Ga Maamli", sans-serif;
 }
 
-
 body {
-  font-family: 'Noto Serif Devanagari', sans-serif;
+  font-family: "Noto Serif Devanagari", sans-serif;
 }
 
 .every_stick_bg {
@@ -80,31 +81,24 @@ body {
   background-position: center;
 }
 
-
 .hm_g_bg {
   background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/785e86e4-5d20-496b-3c20-db30c3544e00/public");
   background-size: cover;
   background-position: center;
 }
 
-
 @media only screen and (max-width: 600px) {
   .every_stick_bg {
     background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/2799445c-082c-49f7-dc88-f74b18e48000/public");
     background-size: cover;
     background-position: unset;
-
   }
 
   .hm_g_bg {
     background-image: url("https://imagedelivery.net/aacnHGAqlUDhaplA3bnkbA/6d86e19b-d05c-4721-9e6d-71a44f744a00/public");
     background-position: unset;
-
   }
-
 }
-
-
 
 .tt {
   text-align: center;
@@ -155,18 +149,14 @@ body {
   }
 }
 
-
-
 /* sub domain pltsy -- */
 
 .vb:hover::after {
-
   height: 100%;
   width: 100%;
   background-color: yellow;
   z-index: -1;
   transition: 0.2s ease;
-
 }
 
 .vb::after {
@@ -193,30 +183,24 @@ body {
   transition: 0.7s ease;
 }
 
-.p_s_d{
+.p_s_d {
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
-
 
 .clip_off {
   clip-path: polygon(100% 0%, 100% 48%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
 }
 
-
 .qty_shadoow {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 }
-
-
-
-
 
 .LoaderApp-logo {
   animation: App-logo-spin infinite 10s linear;
   height: 10vmin;
   pointer-events: none;
 }
-
 
 @keyframes App-logo-spin {
   from {
@@ -227,7 +211,37 @@ body {
   }
 }
 
-
 .activeStatus2 {
   background-color: #e7ff7c;
+}
+
+p {
+  font-size: 1.1rem;
+  font-family: "Noto Serif Devanagari", sans-serif;
+  text-align: justify;
+  padding: 20px 10px 5px 10px;
+}
+
+@media (min-width: 700px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+
+.order-now {
+  animation: 0.5s order-now-animation alternate infinite;
+}
+
+@keyframes order-now-animation {
+  0% {
+    scale: 110%;
+  }
+
+  100% {
+    scale: 100%;
+  }
+}
+
+.shdow_buy_now {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
